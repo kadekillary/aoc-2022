@@ -1,5 +1,5 @@
 defmodule Caloriecnt do
-  def read(file) do
+  def get_calories(file) do
     file
     |> File.stream!()
     |> Stream.map(&String.replace(&1, "\n", ""))
